@@ -1,5 +1,9 @@
 let totalPeople = 0;
 let count = 0;
+const resetButton = document.getElementById("reset");
+
+resetButton.addEventListener("click", resetCount);
+resetButton.addEventListener("dblclick", resetAllCount);
 
 function increment() {
   count++;
@@ -13,9 +17,17 @@ function decrement() {
   }
 }
 
-function reset() {
+function resetCount() {
   totalPeople += count;
-  console.log(totalPeople);
+  count = 0;
+  document.getElementById("count").innerText = count;
+  document.getElementById(
+    "total"
+  ).innerText = `Total People Entered: ${totalPeople}`;
+}
+
+function resetAllCount() {
+  totalPeople = 0;
   count = 0;
   document.getElementById("count").innerText = count;
   document.getElementById(
