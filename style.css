@@ -26,9 +26,9 @@ body {
   height: 75px;
   width: 75px;
   font-size: 40px;
-  background-color: transparent;
+  background-color: #484540;
   cursor: pointer;
-  color: #484540;
+  color: #e8e7e3;
   border: 1px solid #484540;
   border-radius: 50%;
   box-shadow: 1px 3px 2px 2px;
@@ -83,15 +83,21 @@ h1 {
 
 /* Media queries for smartphones */
 @media (max-width: 480px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
   .btns {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: space-between;
   }
 
   .btns button {
-    height: 45px;
-    width: 45px;
-    font-size: 20px;
+    height: 65px;
+    width: 65px;
+    font-size: 25px;
     margin-bottom: 10px;
     border-radius: 50%;
   }
@@ -105,6 +111,6 @@ h1 {
   }
 
   #total {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
