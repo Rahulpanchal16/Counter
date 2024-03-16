@@ -21,16 +21,12 @@ function resetCount() {
   totalPeople += count;
   count = 0;
   document.getElementById("count").innerText = count;
-  document.getElementById(
-    "total"
-  ).innerText = `Total People Entered: ${totalPeople}`;
+  document.getElementById("total").innerText = `Total: ${totalPeople}`;
 }
 
 function resetAllCount() {
   totalPeople = 0;
   count = 0;
   document.getElementById("count").innerText = count;
-  document.getElementById(
-    "total"
-  ).innerText = `Total People Entered: ${totalPeople}`;
+  document.getElementById("total").innerText = `Total: ${totalPeople}`;
 }
